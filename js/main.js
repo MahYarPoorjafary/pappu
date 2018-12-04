@@ -177,7 +177,7 @@ mit.main = function() {
 
     mit.highScore = JSON.parse(localStorage.getItem("highScore"));
     if (mit.highScore)
-      ui.high_score.text("High Score: "+ mit.highScore);
+      ui.high_score.text("بهترین امتیاز: "+ mit.highScore);
 
   } catch (e) {}
 
@@ -295,16 +295,16 @@ mit.main = function() {
       mit.highScore = parseInt(mit.score);
       localStorage.setItem("highScore", JSON.stringify(parseInt(mit.score)));
 
-      ui.high_score.text("High Score: "+ mit.highScore);
+      ui.high_score.text("بهترین امتیاز: "+ mit.highScore);
     }
 
     // Show last_score
-    ui.last_score.text("Last Score: " + parseInt(mit.score));
+    ui.last_score.text("آخرین امتیاز: " + parseInt(mit.score));
 
 
-    ui.start_game.html('re-start');
-    ui.tweet.html('tweet score');
-    ui.fb.html('post on fb');
+    ui.start_game.html('یه بار دیگه');
+    ui.tweet.html('توییتر');
+    ui.fb.html('فیسبوک');
 
     mit.descend();
 
